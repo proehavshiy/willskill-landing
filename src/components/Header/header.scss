@@ -1,0 +1,46 @@
+// фиксированная шапка
+.header {
+  display: flex;
+  align-items: center;
+  position: $headerPosition;
+  width: 100%;
+  height: 8rem;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: $colMain;
+
+  @media screen and (max-width: $bp1) {
+    height: 12rem;
+  }
+
+  @media screen and (max-width: $bp3) {
+    height: 8rem;
+  }
+
+  // .header__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  z-index: 55;
+
+  // .logo__link
+
+  &__link {}
+
+  // .logo__img
+
+  &__img {
+    width: 12rem;
+    height: 3.5rem;
+  }
+}
+
+
+@import '../Navbar/navbar';

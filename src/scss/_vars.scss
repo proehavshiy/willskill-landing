@@ -1,13 +1,14 @@
 // * Container & breakpoints
 @use "sass:math"; // подключение модуля math
 $maxWidth: 1440; // макс ширина по макету
-$containerWidth: 1080; // ширина контейнера контента - ширина - сумма паддиногов
-$containerPadding: 64; // паддинги по бокам от контейнера - сумма паддингов
+$containerWidth: 1440; // ширина контейнера контента - ширина - сумма паддиногов
+$containerPadding: 128; // паддинги по бокам от контейнера - сумма паддингов
 $containerSidePadding: math.div($containerPadding, 2);
-$breakpoint1200: 1199.98+px;
-$breakpoint992: 991.98+px;
-$breakpoint768: 767.98+px;
-$breakpoint480: 479.98+px;
+$bp1: 1439.98+px;
+$bp2: 1199.98+px;
+$bp3: 991.98+px;
+$bp4: 767.98+px;
+$bp5: 479.98+px;
 
 // * Fonts
 $fontMain: 'Rubik',
@@ -34,7 +35,7 @@ $cycledLinearAnimation: .8s infinite linear;
 
 
 // * Header & Burger menu options
-$burgerBreakpoint: $breakpoint768;
+$burgerBp: $bp3;
 $burgerColor: $colorBg;
 $burgerColor_active: $colorBg;
 $burgerFontColor_active: $colorFontMain;

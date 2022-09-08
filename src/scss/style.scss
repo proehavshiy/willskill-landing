@@ -29,12 +29,6 @@
 //*
 
 // * компоненты
-// кнопка
-@import"../htmlParts/components/button/button";
-@import"../htmlParts/components/Grid-for-cards/Grid-for-cards";
-@import "../htmlParts/components/Card-with-image/card-with-image";
-@import"../htmlParts/components/Social-bar/Social-bar";
+@import "../components/Header/header";
 
-// * Sections SCSS files imports
-@import "_header";
-@import"_footer";
+@import"../components/Button/button";

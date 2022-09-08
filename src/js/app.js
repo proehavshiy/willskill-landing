@@ -1,6 +1,6 @@
 // * custom scripts
 import * as browserWebp from "./modules/functions.js"
-import * as navbar from "../htmlParts/components/Navbar/navbar.js"
+import * as navbar from "../components/Navbar/navbar.js"
 // import 'bootstrap';
 
 // подключение бургера
