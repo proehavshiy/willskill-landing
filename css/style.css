@@ -616,7 +616,7 @@ body.locked {
 }
 
 .no-webp .product {
-  background-image: url(../../img/bg.jpg); }
+  background-image: url(/img/bg.jpg); }
 
 .product {
   position: relative;
@@ -1109,4 +1109,4 @@ body.locked {
   }
 }
 
-.webp .product { background-image: url(../../img/bg.webp); }
+.webp .product { background-image: url(/img/bg.webp); }
