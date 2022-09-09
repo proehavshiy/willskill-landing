@@ -92,6 +92,12 @@
     transition: all 0.5s ease 0s;
     pointer-events: none;
 
+    // для ландскейп режима смартфонов
+    @media only screen and (orientation: landscape) {
+      top: 10%;
+      grid-template-columns: repeat(2, minmax(min-content, max-content));
+    }
+
     &.active {
       left: 0;
       top: 0;
