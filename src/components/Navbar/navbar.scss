@@ -144,8 +144,8 @@
     margin-left: 2rem;
     display: block;
     position: relative;
-    height: 20px;
-    width: 30px;
+    height: 2rem;
+    width: 3rem;
     z-index: 102;
     cursor: pointer;
 
@@ -155,7 +155,7 @@
       background: $colFontMain;
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: .2rem;
       left: 0;
       transition: all 0.3s ease 0s;
     }
@@ -172,22 +172,22 @@
       position: absolute;
       background-color: $colFontMain;
       left: 0;
-      top: 9px;
+      top: .9rem;
       width: 100%;
-      height: 2px;
+      height: .2rem;
       transition: all 0.3s ease 0s;
     }
 
     &.active-burger {
       &:before {
         transform: rotate(45deg);
-        top: 9px;
+        top: .9rem;
         background-color: $colFontMain;
       }
 
       &:after {
         transform: rotate(-45deg);
-        bottom: 9px;
+        bottom: .9rem;
         background-color: $colFontMain;
       }
 

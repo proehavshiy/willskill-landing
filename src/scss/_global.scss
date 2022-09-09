@@ -9,25 +9,15 @@
   padding: 0 $containerSidePadding+px;
   position: relative;
 
-
-  @media (max-width: $bp3) {
-    max-width: 970px;
-  }
-
   @media (max-width: $bp4) {
-    max-width: 750px;
     padding: 0 calc($containerSidePadding / 2) +px;
-  }
-
-  @media (max-width: $bp5) {
-    max-width: none;
   }
 }
 
 // * Body
 
 html {
-  font-size: 10px;
+  font-size: 10px; // базовый размер шрифта
 }
 
 body {
@@ -37,35 +27,5 @@ body {
   &.locked {
     // стиль для боди при открытом бургер менб, чтобы не прокручивался конент под меню
     overflow: hidden;
-  }
-}
-
-// * Animations
-// * Fade
-
-@keyframes fade {
-
-  // для анимации табов
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-
-@keyframes cycledMove {
-  from {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(3px, -1.5px);
-  }
-
-  to {
-    transform: translate(0, 0);
   }
 }

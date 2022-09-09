@@ -21,15 +21,6 @@ $colAccent: #FCB500;
 $colFontMain: #FFFFFF;
 $colFontAdd: #000000;
 
-$colorBg: #111111;
-$colorBgAccent: #FAF9FA;
-$colorCardHover: #FAFBFD;
-$colorMain: #2962EF;
-$colorMainDark: #1646c1;
-$colorFontMain: #232427;
-$colorFontDop: #5E5C6C;
-$colorSubheading: #9998A4;
-
 // * transitions & animations
 $linkTransition: all .3s ease;
 $cycledLinearAnimation: .8s infinite linear;
@@ -37,11 +28,11 @@ $cycledLinearAnimation: .8s infinite linear;
 
 // * Header & Burger menu options
 $burgerBp: $bp3;
-$burgerColor: $colorBg;
-$burgerColor_active: $colorBg;
-$burgerFontColor_active: $colorFontMain;
-$burgerButtonColor: $colorFontMain;
-$burgerButtonColor_active: $colorFontMain;
+$burgerColor: $colMain;
+$burgerColor_active: $colFontMain;
+$burgerFontColor_active: $colFontMain;
+$burgerButtonColor: $colFontMain;
+$burgerButtonColor_active: $colFontMain;
 $headerPosition: relative; // fixed or relative
 
 // * Mixins

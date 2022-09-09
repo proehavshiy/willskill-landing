@@ -13,9 +13,7 @@ node_modules/
 
 # files
 /gulp/version.json
-/src/fonts/*
 /src/files/*
-/src/img/*
 /src/svgicons/*
 
 !/src/fonts/.keep
