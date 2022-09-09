@@ -1,20 +1,23 @@
 .button {
+  padding: 1.6rem 5rem;
+  min-width: 20rem;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
-  background: $colorMain;
-  color: $colorBg;
-  fill: $colorBg;
-  border-radius: 4px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1;
+  background-color: $colAccent;
+  color: $colFontAdd;
+  border: .3rem solid $colAccent;
+  border-radius: .7rem;
+  font-size: 1.8rem;
+  line-height: 1.17;
   cursor: pointer;
   transition: $linkTransition;
 
+  @media screen and (max-width: $bp4) {
+    padding: 1.6rem 3rem;
+  }
+
   &:hover {
-    background-color: $colorMainDark;
+    background-color: $colFontMain;
+    color: $colAccent;
   }
 }

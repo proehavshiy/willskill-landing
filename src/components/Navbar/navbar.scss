@@ -25,13 +25,40 @@
 
   // .menu__item-link
   &__item-link {
+    position: relative;
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    transition: $linkTransition;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4.6rem;
+      width: 0px;
+      height: .5rem;
+      display: block;
+      background: $colFontMain;
+      transition: $linkTransition;
+
+      @media screen and (max-width: $bp1) {
+        display: none;
+      }
+    }
 
     &:hover {
-      opacity: .8;
+
+      // text-decoration: underline;
+      // text-decoration-color: $colFontMain;
+      // text-underline-offset: 2.9rem;
+      // text-decoration-thickness: .5rem;
+      @media screen and (max-width: $bp1) {
+        opacity: .8;
+      }
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 }
