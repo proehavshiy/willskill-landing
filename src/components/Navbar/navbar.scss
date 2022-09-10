@@ -1,6 +1,24 @@
 .navbar {
   display: flex;
   align-items: center;
+
+  // .navbar__cart
+  &__cart {
+    width: 3.2rem;
+    height: 2.8rem;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &.button {
+      min-width: 0;
+      background-image: url(../img/cart.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
 }
 
 .menu {
@@ -66,12 +84,6 @@
 .cart {
   position: relative;
   z-index: 999;
-  cursor: pointer;
-  transition: $linkTransition;
-
-  &:hover {
-    opacity: .8;
-  }
 
   // .cart__counter
 
