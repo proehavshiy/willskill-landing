@@ -25,12 +25,12 @@
   display: grid;
   grid-template-columns: repeat(6, minmax(min-content, max-content));
   align-items: center;
-  gap: 4rem;
+  grid-column-gap: 4rem;
   margin-right: 7.2rem;
 
   @media screen and (max-width: $bp1) {
     grid-template-columns: repeat(3, minmax(min-content, max-content));
-    row-gap: 1rem;
+    grid-row-gap: 1rem;
   }
 
   // .menu__item

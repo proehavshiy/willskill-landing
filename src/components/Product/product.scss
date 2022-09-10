@@ -23,6 +23,10 @@
   // .product__content
 
   &__content {
+    $productBlockHeight: 792;
+    min-height: calc($productBlockHeight / 1440 * 100vw); // 55vw; - динамическая ширина и флексы, чтобы при уменьшении контента, блок не уменьшал ширину, и картинка товара не уходила за блок вверху
+    display: flex;
+    flex-direction: column;
     padding: 9.6rem 0;
     max-width: 100.8rem;
 
@@ -34,6 +38,7 @@
   // .product__info-main
 
   &__info-main {
+    flex: 1 0 auto; // чтобы прижать нижний блок к низу всегда. Проявляется, если контента в этом блоке будет меньше
     margin-bottom: 12rem;
 
     @media screen and (max-width: $bp5) {
@@ -69,6 +74,7 @@
   // .product__info-additional
 
   &__info-additional {
+    flex: 0 0 auto;
     max-width: 41.27%;
 
     @media screen and (max-width: $bp5) {
